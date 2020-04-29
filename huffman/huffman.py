@@ -43,13 +43,14 @@ def queue_to_nodes(queue):
 
 # From a list of nodes, generate a binary tree of nodes based
 #     on frequency. Return the head node.
-def build_tree(nodes):
+def build_tree(nodes, verbose=False):
 
     while len(nodes) > 1:
 
-        print("===== NODES LIST =====")
-        for n in nodes:
-            print(n)
+        if verbose:
+            print("===== NODES LIST =====")
+            for n in nodes:
+                print(n)
 
 
         # Create a nwe node.
