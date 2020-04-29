@@ -1,1 +1,1 @@
-from .huffman import huffman
+from .huffman import huffman, decode

@@ -94,3 +94,24 @@ def huffman(input):
     t = build_tree(n)
     t.traverse()
     return t
+
+
+def decode(string, data):
+
+    index = 0
+    output = ""
+    length = len(string)
+
+    while index < length:
+
+        current_char = ""
+
+        for key, val in data.items():
+
+            if string.startswith(val, index):
+                current_char = key
+
+        output += current_char
+        index += len(data[current_char])
+
+    return output
