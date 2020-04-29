@@ -47,9 +47,9 @@ def build_tree(nodes):
 
     while len(nodes) > 1:
 
-        # print("===== NODES LIST =====")
-        # for n in nodes:
-        #     print(n)
+        print("===== NODES LIST =====")
+        for n in nodes:
+            print(n)
 
 
         # Create a nwe node.
@@ -92,7 +92,6 @@ def huffman(input):
     q = priority_queue(f)
     n = queue_to_nodes(q)
     t = build_tree(n)
-    t.traverse()
     return t
 
 

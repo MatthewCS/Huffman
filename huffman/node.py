@@ -78,6 +78,8 @@ class HeadNode(Node):
 
         self.traverse()
 
+        self.data = self.get_dict()
+
 
     # Given some input string, use our encoding (self.data) to
     #     transform that string and encode it.
